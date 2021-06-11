@@ -7,9 +7,10 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
-    "bootstrap": "^5.0.0-beta1",
+    "chart.js": "^3.3.2",
     "electron-is-dev": "^1.2.0",
     "react": "^17.0.1",
+    "react-chartjs-2": "^3.0.3",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
     "web-vitals": "^0.2.4"
@@ -21,9 +22,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron:serve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn electron:start\"",
-    "electron:build": "yarn build && electron-builder -c.extraMetadata.main=build/main.js",
-    "electron:start": "wait-on tcp:3000 && electron ."
+    "eserve": "concurrently -k \"cross-env BROWSER=none yarn start\" \"yarn estart\"",
+    "ebuild": "yarn build && electron-builder -c.extraMetadata.main=build/main.js",
+    "estart": "wait-on tcp:3000 && electron ."
   },
   "build": {
     "extends": null,
